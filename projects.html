@@ -13,41 +13,47 @@
     <title>Basic Site</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="canonical" href="https://your-site.example/basic-site.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="favicon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header>
         <h1>Projects</h1>
-    </header>
-    <nav>
+        <nav class="desktop-nav">
         <ul>
-            <li><a href="#Home">Home / </a></li>
+            <li><a href="./index.html">Home / </a></li>
             <li><a href="./projects.html">Projects / </a></li>
             <li><a href="./articles.html">Articles / </a></li>
             <li><a href="./contact.html">Contact</a></li>
         </ul>
     </nav>
+    </header>
+    
     <main>
-        <section id="html-only-portfolio">
-            <h2>HTML Only Portfolio</h2>
-            <p>A portfolio website built using only HTML to showcase projects and skills.</p>
-        </section>
-        <section id="calculator">
-            <h2>Calculator</h2>
-            <p>A simple calculator application built with HTML.</p>
-        </section>
-        <section id="quiz-app">
-            <h2>Quiz App</h2>
-            <p>A quiz application built using HTML to test knowledge on various topics.</p>
-        </section>
-        <section id="countdown-timer">
-            <h2>Countdown Timer</h2>
-            <p>A countdown timer application built with HTML.</p>
-        </section>
-        <section id="product-upcoming-page">
-            <h2>Product Upcoming Page</h2>
-            <p>A product upcoming page built using HTML to showcase upcoming products.</p>
-        </section>
+        <div id="projects-container">
+            <section id="html-only-portfolio">
+                <h2>HTML Only Portfolio</h2>
+                <p>A portfolio website built using only HTML to showcase projects and skills.</p>
+            </section>
+            <section id="calculator">
+                <h2>Calculator</h2>
+                <p>A simple calculator application built with HTML.</p>
+            </section>
+            <section id="quiz-app">
+                <h2>Quiz App</h2>
+                <p>A quiz application built using HTML to test knowledge on various topics.</p>
+            </section>
+            <section id="countdown-timer">
+                <h2>Countdown Timer</h2>
+                <p>A countdown timer application built with HTML.</p>
+            </section>
+            <section id="product-upcoming-page">
+                <h2>Product Upcoming Page</h2>
+                <p>A product upcoming page built using HTML to showcase upcoming products.</p>
+            </section>
+        </div>
     </main>
     <footer>
         <p>&copy; All rights reserved 2025</p>
