@@ -3,6 +3,8 @@
     --primary-background: #f4f4f4;
     --primary-black: #000000;
     --card-background: #fff;
+    --accent-color: #444;
+    --primary-text: #333;
     --border: #ddd;
     --radius: 5px;
 }
@@ -11,6 +13,9 @@
 [data-theme="dark"] {
     --primary-background: #121212;
     --card-background: #1e1e1e;
+    --primary-black: #ffffff;
+    --accent-color: #bbb;
+    --primary-text: #eee;
     --border: #333;
     --radius: 5px;
 }
@@ -26,8 +31,68 @@ body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     background-color: var(--primary-background);
-    color: #333;
+    color: var(--primary-text);
     padding: 20px;
+}
+
+/*dark mode toggle styles*/
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  em {
+    margin-left: 10px;
+    font-size: 1rem;
+  }
+}
+.theme-switch {
+  display: inline-block;
+  height: 34px;
+  position: relative;
+  width: 60px;
+}
+
+.theme-switch input {
+  display:none;
+}
+
+.slider {
+  background-color: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: .4s;
+}
+
+.slider:before {
+  background-color: #fff;
+  bottom: 4px;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: .4s;
+  width: 26px;
+}
+
+input:checked + .slider {
+  background-color: #66bb6a;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }
 
 /*header styles*/
@@ -39,7 +104,7 @@ header {
 
 header h1 {
     font-size: 2.5em;
-    color: #444;
+    color: var(--accent-color);
 }
 
 nav.desktop-nav ul {
@@ -67,7 +132,8 @@ nav.desktop-nav ul li a {
 
 #hero p {
     font-size: 1.2em;
-    color: #666;
+    color: var(--accent-color);
+    margin-bottom: 25px;
 }
 
 #main {
