@@ -1,7 +1,7 @@
 # personal-portfolio
 
 A personal portfolio website built to showcase skills, projects, and background — based on the roadmap.sh **Portfolio Website** project.  
-https://roadmap.sh/projects/portfolio-website :contentReference[oaicite:1]{index=1}
+https://roadmap.sh/projects/portfolio-website
 
 ## 🌐 Project Overview
 
@@ -52,8 +52,8 @@ Once deployed, visitors can view your portfolio at the above URL.
 ## ✅ Next Steps & Enhancements (Optional)
 
 - Replace all mock data with your real info (bio, skills, projects, contact links)
-- Add CSS for styling: layout, colors, typography
-- Make the site responsive — ensure it looks good across desktop, tablet, and mobile
-- Add a contact form or contact links
-- Add metadata: page title, description, social sharing (Open Graph) tags
+- Add CSS for styling: layout, colors, typography (basic styling implemented)
+- Make the site responsive — ensure it looks good across desktop, tablet, and mobile (basic responsive styling implemented)
+- Add a contact form or contact links (done, can edit further)
+- Add metadata: page title, description, social sharing (Open Graph) tags (done, can edit further)
 - Optionally deploy to GitHub Pages (or another static host) so your portfolio is publicly accessible
